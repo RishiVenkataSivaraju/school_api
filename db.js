@@ -32,10 +32,13 @@ const connection = mysql.createConnection({
 
 connection.connect((err) => {
   if (err) {
-    console.error('Error connecting to the database',err);
+    console.error('Error connecting to the database', err);
+    console.log(process.env.PEM_FILE); // Ensure this logs the PEM data or a non-empty value
+
     return;
   }
   console.log('Connected to the database');
+ console.log(process.env.PEM_FILE);
 });
 
 module.exports = connection;
