@@ -24,7 +24,7 @@ const connectionString = 'mysql://gh3bE4KMQtcc5Ar.root:uMR9iGppsD9IdDNm@gateway0
 const connection = mysql.createConnection({
   uri: connectionString,
   ssl: {
-    ca: fs.readFileSync('isrgrootx1.pem'),
+    ca: fs.readFileSync(DB_PEM_PATH),
   }
 });
 
