@@ -13,6 +13,7 @@
 //   *
 // FROM
 //   `schools`;
+//schema added it TiDB
 const mysql = require('mysql2');
 const fs = require('fs'); // File system module for TLS certificates
 
